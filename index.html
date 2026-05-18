@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Mahesh Halimani | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">DMH</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="toggle-icon">🌙</span>
+    </button>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" onclick="closeMobile()">Home</a></li>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#achievements" onclick="closeMobile()">Achievements</a></li>
+      <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
+      <li><a href="#gallery" onclick="closeMobile()">Gallery</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div class="hero-bg-accent"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting animate-in" style="--d:0.1s">Hello, I'm</p>
+        <h1 class="hero-name animate-in" style="--d:0.25s">Dev Mahesh<br><span>Halimani</span></h1>
+        <p class="hero-tagline animate-in" style="--d:0.4s">BBA Student · Marketing Enthusiast · Future Business Leader</p>
+        <div class="hero-badges animate-in" style="--d:0.55s">
+          <span class="badge">📊 Marketing</span>
+          <span class="badge">🏏 Cricket</span>
+          <span class="badge">🤖 AI Learner</span>
+        </div>
+        <div class="hero-cta animate-in" style="--d:0.7s">
+          <a href="#contact" class="btn-primary">Get In Touch</a>
+          <a href="#projects" class="btn-outline">View Projects</a>
+        </div>
+      </div>
+      <div class="hero-img animate-in" style="--d:0.3s">
+        <div class="img-wrapper">
+          <img src="assets/photo2.jpeg" alt="Dev Mahesh Halimani" />
+          <div class="img-ring"></div>
+          <div class="img-dot img-dot-1"></div>
+          <div class="img-dot img-dot-2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-img-col reveal">
+          <img src="assets/photo1.jpeg" alt="Dev Halimani" class="about-photo" />
+          <div class="about-stat-card">
+            <strong>FY BBA</strong>
+            <span>Marketing Specialization</span>
+          </div>
+        </div>
+        <div class="about-text-col reveal" style="--rd:0.15s">
+          <p class="about-bio">
+            I am <strong>Dev Mahesh Halimani</strong>, a First Year BBA student specializing in <strong>Marketing</strong> at MIT Vishwaprayag University. I am passionate about understanding consumer behavior, building brands, and leveraging technology to drive business growth.
+          </p>
+          <p class="about-bio">
+            With certifications in <strong>Artificial Intelligence</strong> and <strong>Organizational Behavior</strong>, I bring a blend of technical awareness and people-management insight to every project I undertake.
+          </p>
+          <div class="about-cards">
+            <div class="about-card">
+              <div class="about-card-icon">🎓</div>
+              <h4>Education</h4>
+              <p>BBA – Marketing<br>MIT Vishwaprayag University</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">🎯</div>
+              <h4>Goals</h4>
+              <p>Build a career in brand strategy & digital marketing</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">⚡</div>
+              <h4>Strengths</h4>
+              <p>Leadership, Communication, Analytical Thinking</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">🏏</div>
+              <h4>Interests</h4>
+              <p>Cricket, AI & Technology, Business Strategy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section achievements-section" id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="cert-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">Cisco</div>
+          <img src="assets/cert-cisco.jpeg" alt="Cisco Introduction to Modern AI" class="cert-img" onclick="openLightbox(this)" />
+          <div class="cert-info">
+            <h3>Introduction to Modern AI</h3>
+            <p>Cisco Networking Academy</p>
+            <span class="cert-date">📅 17 Feb 2026</span>
+            <p class="cert-desc">Completed a comprehensive course on Artificial Intelligence fundamentals, covering machine learning, neural networks, and real-world AI applications offered by Cisco Networking Academy.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" style="--rd:0.15s">
+          <div class="cert-badge coursera-badge">Coursera</div>
+          <img src="assets/cert-coursera.jpeg" alt="Organizational Behavior Coursera" class="cert-img" onclick="openLightbox(this)" />
+          <div class="cert-info">
+            <h3>Organizational Behavior: How to Manage People</h3>
+            <p>IESE Business School · Coursera</p>
+            <span class="cert-date">📅 12 Dec 2025</span>
+            <p class="cert-desc">Successfully completed an online non-credit course authorized by IESE Business School, University of Navarra. Covered managing teams, leadership styles, and organizational dynamics.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" style="--rd:0.3s">
+          <div class="cert-badge ai4a-badge">YuvaAI</div>
+          <div class="cert-img-placeholder">
+            <span>🤖</span>
+          </div>
+          <div class="cert-info">
+            <h3>AI for All (YuvaAI) Program</h3>
+            <p>MITVPU – AI4A Initiative</p>
+            <span class="cert-date">📅 2025–2026</span>
+            <p class="cert-desc">Participated in the AI for All curriculum covering AI ethics, tools, and applications — part of India's YuvaAI initiative to build AI literacy among students.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" style="--rd:0.45s">
+          <div class="cert-badge dt-badge">Design</div>
+          <div class="cert-img-placeholder">
+            <span>💡</span>
+          </div>
+          <div class="cert-info">
+            <h3>Design Thinking Project</h3>
+            <p>MIT Vishwaprayag University</p>
+            <span class="cert-date">📅 2025–2026</span>
+            <p class="cert-desc">Applied design thinking methodology — empathize, define, ideate, prototype, and test — to develop an innovative solution addressing a real-world business problem.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured-project reveal">
+          <div class="project-tag">Featured</div>
+          <div class="project-preview">
+            <div class="project-browser">
+              <div class="browser-bar">
+                <span></span><span></span><span></span>
+                <div class="browser-url">devhalimani8-arch.github.io/watch-store</div>
+              </div>
+              <div class="project-screen">
+                <div class="watch-preview">
+                  <div class="watch-icon">⌚</div>
+                  <div class="watch-text">
+                    <h4>LuxeTime Watch Store</h4>
+                    <p>Premium E-Commerce</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>LuxeTime Watch Store</h3>
+            <p>A fully responsive e-commerce website for premium watches. Built with HTML, CSS, and JavaScript featuring product listings, interactive UI, and a professional storefront design.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>E-Commerce</span>
+            </div>
+            <a href="https://devhalimani8-arch.github.io/watch-store.github.io/" target="_blank" class="project-link">
+              View Live Project →
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--rd:0.15s">
+          <div class="project-preview mini-preview">
+            <div class="mini-icon">🤖</div>
+          </div>
+          <div class="project-info">
+            <h3>AI for All (Ai4A) Project</h3>
+            <p>Developed as part of the YuvaAI curriculum — researched AI applications in marketing and consumer behavior, presenting insights on how AI tools transform modern business strategies.</p>
+            <div class="project-tags">
+              <span>AI</span><span>Research</span><span>Marketing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--rd:0.3s">
+          <div class="project-preview mini-preview">
+            <div class="mini-icon">💡</div>
+          </div>
+          <div class="project-info">
+            <h3>Design Thinking Project</h3>
+            <p>Applied the 5-stage design thinking framework to identify a real-world problem in the college ecosystem and prototyped an innovative solution using empathy mapping and ideation techniques.</p>
+            <div class="project-tags">
+              <span>Design Thinking</span><span>Problem Solving</span><span>Innovation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--rd:0.45s">
+          <div class="project-preview mini-preview">
+            <div class="mini-icon">📊</div>
+          </div>
+          <div class="project-info">
+            <h3>Marketing Strategy Case Study</h3>
+            <p>Analyzed consumer behavior trends and developed a comprehensive marketing strategy for a local business, applying core BBA marketing principles and digital tools.</p>
+            <div class="project-tags">
+              <span>Marketing</span><span>Strategy</span><span>Analysis</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Moments</span>
+        <h2 class="section-title">Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" style="--rd:0s">
+          <img src="assets/photo2.jpeg" alt="Dev Halimani" onclick="openLightbox(this)" />
+          <div class="gallery-caption">Profile Photo</div>
+        </div>
+        <div class="gallery-item reveal" style="--rd:0.1s">
+          <img src="assets/photo1.jpeg" alt="Dev Halimani" onclick="openLightbox(this)" />
+          <div class="gallery-caption">At an Event</div>
+        </div>
+        <div class="gallery-item reveal" style="--rd:0.2s">
+          <img src="assets/cert-cisco.jpeg" alt="Cisco Certificate" onclick="openLightbox(this)" />
+          <div class="gallery-caption">Cisco – Intro to Modern AI</div>
+        </div>
+        <div class="gallery-item reveal" style="--rd:0.3s">
+          <img src="assets/cert-coursera.jpeg" alt="Coursera Certificate" onclick="openLightbox(this)" />
+          <div class="gallery-caption">Coursera – Organizational Behavior</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+      <div class="contact-wrapper reveal">
+        <div class="contact-text">
+          <p>I'm always open to new opportunities, collaborations, and conversations. Whether you're a recruiter, fellow student, or just want to connect — feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:devhalimani@gmail.com" class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <span>devhalimani@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:8237969669" class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <span>+91 82379 69669</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/devhalimani" target="_blank" class="contact-item">
+              <span class="contact-icon">💼</span>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/devhalimani</span>
+              </div>
+            </a>
+            <a href="https://github.com/devhalimani8-arch" target="_blank" class="contact-item">
+              <span class="contact-icon">🐙</span>
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/devhalimani8-arch</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-area">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" class="form-input" id="cName" />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" class="form-input" id="cEmail" />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" class="form-input form-textarea" id="cMsg"></textarea>
+          </div>
+          <button class="btn-primary" onclick="sendMsg()">Send Message 🚀</button>
+          <p id="formMsg" class="form-success" style="display:none">✅ Thanks! I'll get back to you soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Dev Mahesh Halimani</span>
+      <p>© 2026 · BBA Marketing · MITVPU</p>
+      <p class="footer-quote">"Dream big, start small, act now."</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightboxImg" src="" alt="Preview" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
